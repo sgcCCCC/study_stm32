@@ -1,0 +1,859 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: dell,  , LIC=LSNXV-PZY2L-56MQ2-9DEGX-CCLLN-RAJAV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  D:\study STM32\keiil 5\install\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.15.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\study STM32\MY projrct and exe\exe1_led_2022.11.30\LED_RGB.uvprojx
+Project File Date:  12/01/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'D:\study STM32\keiil 5\install\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: In file included from...
+./stm32f10x.h(4): warning: // comments are not allowed in this language [-Wcomment]
+// 用来存放STM32寄存器映射的代码
+^
+main.c(2): warning: In file included from...
+./stm32f10x_gpio.h(6): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_0    ((uint16_t)0x0001)  /*!< ѡ<D4><F1>Pin0 */    //(00000000 00000001)b
+                                                ^
+./stm32f10x_gpio.h(6): warning: // comments are not allowed in this language [-Wcomment]
+#define GPIO_Pin_0    ((uint16_t)0x0001)  /*!< ѡ<D4><F1>Pin0 */    //(00000000 00000001)b
+                                                                   ^
+./stm32f10x_gpio.h(7): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_1    ((uint16_t)0x0002)  /*!< ѡ<D4><F1>Pin1 */    //(00000000 00000010)b
+                                                ^
+./stm32f10x_gpio.h(8): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_2    ((uint16_t)0x0004)  /*!< ѡ<D4><F1>Pin2 */    //(00000000 00000100)b
+                                                ^
+./stm32f10x_gpio.h(9): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_3    ((uint16_t)0x0008)  /*!< ѡ<D4><F1>Pin3 */    //(00000000 00001000)b
+                                                ^
+./stm32f10x_gpio.h(10): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_4    ((uint16_t)0x0010)  /*!< ѡ<D4><F1>Pin4 */    //(00000000 00010000)b
+                                                ^
+./stm32f10x_gpio.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_5    ((uint16_t)0x0020)  /*!< ѡ<D4><F1>Pin5 */    //(00000000 00100000)b
+                                                ^
+./stm32f10x_gpio.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_6    ((uint16_t)0x0040)  /*!< ѡ<D4><F1>Pin6 */    //(00000000 01000000)b
+                                                ^
+./stm32f10x_gpio.h(13): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_7    ((uint16_t)0x0080)  /*!< ѡ<D4><F1>Pin7 */    //(00000000 10000000)b
+                                                ^
+./stm32f10x_gpio.h(15): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_8    ((uint16_t)0x0100)  /*!< ѡ<D4><F1>Pin8 */    //(00000001 00000000)b
+                                                ^
+./stm32f10x_gpio.h(16): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_9    ((uint16_t)0x0200)  /*!< ѡ<D4><F1>Pin9 */    //(00000010 00000000)b
+                                                ^
+./stm32f10x_gpio.h(17): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_10   ((uint16_t)0x0400)  /*!< ѡ<D4><F1>Pin10 */   //(00000100 00000000)b
+                                                ^
+./stm32f10x_gpio.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_11   ((uint16_t)0x0800)  /*!< ѡ<D4><F1>Pin11 */   //(00001000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_12   ((uint16_t)0x1000)  /*!< ѡ<D4><F1>Pin12 */   //(00010000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(20): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_13   ((uint16_t)0x2000)  /*!< ѡ<D4><F1>Pin13 */   //(00100000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(21): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_14   ((uint16_t)0x4000)  /*!< ѡ<D4><F1>Pin14 */   //(01000000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(22): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_15   ((uint16_t)0x8000)  /*!< ѡ<D4><F1>Pin15 */   //(10000000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_All  ((uint16_t)0xFFFF)  /*!< ѡ<D4><F1>ȫ<B2><BF><D2><FD><BD><C5>*/ //(11111111 11111111)b
+                                                ^
+./stm32f10x_gpio.h(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_All  ((uint16_t)0xFFFF)  /*!< ѡ<D4><F1>ȫ<B2><BF><D2><FD><BD><C5>*/ //(11111111 11111111)b
+                                                         ^
+./stm32f10x_gpio.h(34): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+{ GPIO_Mode_AIN = 0x0,           // ģ<C4><E2><CA><E4><C8><EB>     (0000 0000)b
+                                     ^
+./stm32f10x_gpio.h(35): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_IN_FLOATING = 0x04,  // <B8><A1><BF><D5><CA><E4><C8><EB>     (0000 0100)b
+                                    ^
+./stm32f10x_gpio.h(36): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_IPD = 0x28,          // <CF><C2><C0><AD><CA><E4><C8><EB>     (0010 1000)b
+                                    ^
+./stm32f10x_gpio.h(37): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_IPU = 0x48,          // <C9><CF><C0><AD><CA><E4><C8><EB>     (0100 1000)b
+                                    ^
+./stm32f10x_gpio.h(39): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_Out_OD = 0x14,       // <BF><AA>©<CA><E4><B3><F6>     (0001 0100)b
+                                    ^
+./stm32f10x_gpio.h(39): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_Out_OD = 0x14,       // <BF><AA>©<CA><E4><B3><F6>     (0001 0100)b
+                                             ^
+./stm32f10x_gpio.h(40): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_Out_PP = 0x10,       // <CD><C6><CD><EC><CA><E4><B3><F6>     (0001 0000)b
+                                    ^
+./stm32f10x_gpio.h(41): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_AF_OD = 0x1C,        // <B8><B4><D3>ÿ<AA>©<CA><E4><B3><F6> (0001 1100)b
+                                    ^
+./stm32f10x_gpio.h(41): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_AF_OD = 0x1C,        // <B8><B4><D3>ÿ<AA>©<CA><E4><B3><F6> (0001 1100)b
+                                                 ^
+./stm32f10x_gpio.h(41): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_AF_OD = 0x1C,        // <B8><B4><D3>ÿ<AA>©<CA><E4><B3><F6> (0001 1100)b
+                                                      ^
+./stm32f10x_gpio.h(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_AF_PP = 0x18         // <B8><B4><D3><C3><CD><C6><CD><EC><CA><E4><B3><F6> (0001 1000)b
+                                    ^
+./stm32f10x_gpio.h(59): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STM32F10X_GPIO_H */
+                               ^
+main.c(9): warning: no previous prototype for function 'Delay' [-Wmissing-prototypes]
+void Delay(uint32_t count)
+     ^
+main.c(9): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Delay(uint32_t count)
+^
+static 
+main.c(19): warning: // comments are not allowed in this language [-Wcomment]
+        // 打开 GPIOB 端口的时钟
+        ^
+main.c(29): warning: implicit declaration of function 'GPIO_SetBits' [-Wimplicit-function-declaration]
+                GPIO_SetBits(LED_G_GPIO_PORT,LED_G_GPIO_PIN);
+                ^
+main.c(39): warning: no previous prototype for function 'SystemInit' [-Wmissing-prototypes]
+void SystemInit(void)
+     ^
+main.c(39): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SystemInit(void)
+^
+static 
+36 warnings generated.
+compiling main.c...
+stm32f10x_gpio.c(1): warning: In file included from...
+./stm32f10x_gpio.h(4): warning: In file included from...
+./stm32f10x.h(4): warning: // comments are not allowed in this language [-Wcomment]
+// 用来存放STM32寄存器映射的代码
+^
+stm32f10x_gpio.c(1): warning: In file included from...
+./stm32f10x_gpio.h(6): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_0    ((uint16_t)0x0001)  /*!< ѡ<D4><F1>Pin0 */    //(00000000 00000001)b
+                                                ^
+./stm32f10x_gpio.h(6): warning: // comments are not allowed in this language [-Wcomment]
+#define GPIO_Pin_0    ((uint16_t)0x0001)  /*!< ѡ<D4><F1>Pin0 */    //(00000000 00000001)b
+                                                                   ^
+./stm32f10x_gpio.h(7): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_1    ((uint16_t)0x0002)  /*!< ѡ<D4><F1>Pin1 */    //(00000000 00000010)b
+                                                ^
+./stm32f10x_gpio.h(8): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_2    ((uint16_t)0x0004)  /*!< ѡ<D4><F1>Pin2 */    //(00000000 00000100)b
+                                                ^
+./stm32f10x_gpio.h(9): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_3    ((uint16_t)0x0008)  /*!< ѡ<D4><F1>Pin3 */    //(00000000 00001000)b
+                                                ^
+./stm32f10x_gpio.h(10): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_4    ((uint16_t)0x0010)  /*!< ѡ<D4><F1>Pin4 */    //(00000000 00010000)b
+                                                ^
+./stm32f10x_gpio.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_5    ((uint16_t)0x0020)  /*!< ѡ<D4><F1>Pin5 */    //(00000000 00100000)b
+                                                ^
+./stm32f10x_gpio.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_6    ((uint16_t)0x0040)  /*!< ѡ<D4><F1>Pin6 */    //(00000000 01000000)b
+                                                ^
+./stm32f10x_gpio.h(13): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_7    ((uint16_t)0x0080)  /*!< ѡ<D4><F1>Pin7 */    //(00000000 10000000)b
+                                                ^
+./stm32f10x_gpio.h(15): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_8    ((uint16_t)0x0100)  /*!< ѡ<D4><F1>Pin8 */    //(00000001 00000000)b
+                                                ^
+./stm32f10x_gpio.h(16): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_9    ((uint16_t)0x0200)  /*!< ѡ<D4><F1>Pin9 */    //(00000010 00000000)b
+                                                ^
+./stm32f10x_gpio.h(17): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_10   ((uint16_t)0x0400)  /*!< ѡ<D4><F1>Pin10 */   //(00000100 00000000)b
+                                                ^
+./stm32f10x_gpio.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_11   ((uint16_t)0x0800)  /*!< ѡ<D4><F1>Pin11 */   //(00001000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_12   ((uint16_t)0x1000)  /*!< ѡ<D4><F1>Pin12 */   //(00010000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(20): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_13   ((uint16_t)0x2000)  /*!< ѡ<D4><F1>Pin13 */   //(00100000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(21): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_14   ((uint16_t)0x4000)  /*!< ѡ<D4><F1>Pin14 */   //(01000000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(22): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_15   ((uint16_t)0x8000)  /*!< ѡ<D4><F1>Pin15 */   //(10000000 00000000)b
+                                                ^
+./stm32f10x_gpio.h(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_All  ((uint16_t)0xFFFF)  /*!< ѡ<D4><F1>ȫ<B2><BF><D2><FD><BD><C5>*/ //(11111111 11111111)b
+                                                ^
+./stm32f10x_gpio.h(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+#define GPIO_Pin_All  ((uint16_t)0xFFFF)  /*!< ѡ<D4><F1>ȫ<B2><BF><D2><FD><BD><C5>*/ //(11111111 11111111)b
+                                                         ^
+./stm32f10x_gpio.h(34): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+{ GPIO_Mode_AIN = 0x0,           // ģ<C4><E2><CA><E4><C8><EB>     (0000 0000)b
+                                     ^
+./stm32f10x_gpio.h(35): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_IN_FLOATING = 0x04,  // <B8><A1><BF><D5><CA><E4><C8><EB>     (0000 0100)b
+                                    ^
+./stm32f10x_gpio.h(36): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_IPD = 0x28,          // <CF><C2><C0><AD><CA><E4><C8><EB>     (0010 1000)b
+                                    ^
+./stm32f10x_gpio.h(37): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_IPU = 0x48,          // <C9><CF><C0><AD><CA><E4><C8><EB>     (0100 1000)b
+                                    ^
+./stm32f10x_gpio.h(39): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_Out_OD = 0x14,       // <BF><AA>©<CA><E4><B3><F6>     (0001 0100)b
+                                    ^
+./stm32f10x_gpio.h(39): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_Out_OD = 0x14,       // <BF><AA>©<CA><E4><B3><F6>     (0001 0100)b
+                                             ^
+./stm32f10x_gpio.h(40): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_Out_PP = 0x10,       // <CD><C6><CD><EC><CA><E4><B3><F6>     (0001 0000)b
+                                    ^
+./stm32f10x_gpio.h(41): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_AF_OD = 0x1C,        // <B8><B4><D3>ÿ<AA>©<CA><E4><B3><F6> (0001 1100)b
+                                    ^
+./stm32f10x_gpio.h(41): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_AF_OD = 0x1C,        // <B8><B4><D3>ÿ<AA>©<CA><E4><B3><F6> (0001 1100)b
+                                                 ^
+./stm32f10x_gpio.h(41): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_AF_OD = 0x1C,        // <B8><B4><D3>ÿ<AA>©<CA><E4><B3><F6> (0001 1100)b
+                                                      ^
+./stm32f10x_gpio.h(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  GPIO_Mode_AF_PP = 0x18         // <B8><B4><D3><C3><CD><C6><CD><EC><CA><E4><B3><F6> (0001 1000)b
+                                    ^
+./stm32f10x_gpio.h(59): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STM32F10X_GPIO_H */
+                               ^
+stm32f10x_gpio.c(3): warning: no previous prototype for function 'GPIO_SetBits' [-Wmissing-prototypes]
+void GPIO_SetBits(GPIO_TypeDef *GPIOx,uint16_t GPIO_Pin)
+     ^
+stm32f10x_gpio.c(3): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void GPIO_SetBits(GPIO_TypeDef *GPIOx,uint16_t GPIO_Pin)
+^
+static 
+stm32f10x_gpio.c(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*---------------------- GPIO ģʽ<C5><E4><D6><C3> --------------------------*/
+                                ^
+stm32f10x_gpio.c(19): warning: // comments are not allowed in this language [-Wcomment]
+  // <B0><D1><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_Mode<B5>ĵ<CD><CB><C4>λ<D4>ݴ<E6><D4><DA>currentmode
+  ^
+stm32f10x_gpio.c(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <B0><D1><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_Mode<B5>ĵ<CD><CB><C4>λ<D4>ݴ<E6><D4><DA>currentmode
+     ^
+stm32f10x_gpio.c(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <B0><D1><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_Mode<B5>ĵ<CD><CB><C4>λ<D4>ݴ<E6><D4><DA>currentmode
+                                                      ^
+stm32f10x_gpio.c(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <B0><D1><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_Mode<B5>ĵ<CD><CB><C4>λ<D4>ݴ<E6><D4><DA>currentmode
+                                                           ^
+stm32f10x_gpio.c(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <B0><D1><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_Mode<B5>ĵ<CD><CB><C4>λ<D4>ݴ<E6><D4><DA>currentmode
+                                                                        ^
+stm32f10x_gpio.c(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <B0><D1><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_Mode<B5>ĵ<CD><CB><C4>λ<D4>ݴ<E6><D4><DA>currentmode
+                                                                             ^
+stm32f10x_gpio.c(22): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // bit4<CA><C7>1<B1><ED>ʾ<CA><E4><B3><F6><A3><AC>bit4<CA><C7>0<D4><F2><CA><C7><CA><E4><C8><EB> 
+         ^
+stm32f10x_gpio.c(22): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // bit4<CA><C7>1<B1><ED>ʾ<CA><E4><B3><F6><A3><AC>bit4<CA><C7>0<D4><F2><CA><C7><CA><E4><C8><EB> 
+                  ^
+stm32f10x_gpio.c(22): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // bit4<CA><C7>1<B1><ED>ʾ<CA><E4><B3><F6><A3><AC>bit4<CA><C7>0<D4><F2><CA><C7><CA><E4><C8><EB> 
+                           ^
+stm32f10x_gpio.c(22): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // bit4<CA><C7>1<B1><ED>ʾ<CA><E4><B3><F6><A3><AC>bit4<CA><C7>0<D4><F2><CA><C7><CA><E4><C8><EB> 
+                                                       ^
+stm32f10x_gpio.c(22): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // bit4<CA><C7>1<B1><ED>ʾ<CA><E4><B3><F6><A3><AC>bit4<CA><C7>0<D4><F2><CA><C7><CA><E4><C8><EB> 
+                                                                ^
+stm32f10x_gpio.c(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5>ж<CF>bit4<CA><C7>1<BB><B9><CA><C7>0<A3><AC><BC><B4><CA><D7>ѡ<C5>ж<CF><CA><C7><CA><E4><C8>뻹<CA><C7><CA><E4><B3><F6>ģʽ
+     ^
+stm32f10x_gpio.c(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5>ж<CF>bit4<CA><C7>1<BB><B9><CA><C7>0<A3><AC><BC><B4><CA><D7>ѡ<C5>ж<CF><CA><C7><CA><E4><C8>뻹<CA><C7><CA><E4><B3><F6>ģʽ
+          ^
+stm32f10x_gpio.c(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5>ж<CF>bit4<CA><C7>1<BB><B9><CA><C7>0<A3><AC><BC><B4><CA><D7>ѡ<C5>ж<CF><CA><C7><CA><E4><C8>뻹<CA><C7><CA><E4><B3><F6>ģʽ
+                  ^
+stm32f10x_gpio.c(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5>ж<CF>bit4<CA><C7>1<BB><B9><CA><C7>0<A3><AC><BC><B4><CA><D7>ѡ<C5>ж<CF><CA><C7><CA><E4><C8>뻹<CA><C7><CA><E4><B3><F6>ģʽ
+                           ^
+stm32f10x_gpio.c(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5>ж<CF>bit4<CA><C7>1<BB><B9><CA><C7>0<A3><AC><BC><B4><CA><D7>ѡ<C5>ж<CF><CA><C7><CA><E4><C8>뻹<CA><C7><CA><E4><B3><F6>ģʽ
+                                            ^
+stm32f10x_gpio.c(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5>ж<CF>bit4<CA><C7>1<BB><B9><CA><C7>0<A3><AC><BC><B4><CA><D7>ѡ<C5>ж<CF><CA><C7><CA><E4><C8>뻹<CA><C7><CA><E4><B3><F6>ģʽ
+                                                                     ^
+stm32f10x_gpio.c(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5>ж<CF>bit4<CA><C7>1<BB><B9><CA><C7>0<A3><AC><BC><B4><CA><D7>ѡ<C5>ж<CF><CA><C7><CA><E4><C8>뻹<CA><C7><CA><E4><B3><F6>ģʽ
+                                                                          ^
+stm32f10x_gpio.c(23): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5>ж<CF>bit4<CA><C7>1<BB><B9><CA><C7>0<A3><AC><BC><B4><CA><D7>ѡ<C5>ж<CF><CA><C7><CA><E4><C8>뻹<CA><C7><CA><E4><B3><F6>ģʽ
+                                                                                                    ^
+stm32f10x_gpio.c(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CA><E4><B3><F6>ģʽ<D4><F2>Ҫ<C9><E8><D6><C3><CA><E4><B3><F6><CB>ٶ<C8>
+           ^
+stm32f10x_gpio.c(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CA><E4><B3><F6>ģʽ<D4><F2>Ҫ<C9><E8><D6><C3><CA><E4><B3><F6><CB>ٶ<C8>
+                             ^
+stm32f10x_gpio.c(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CA><E4><B3><F6>ģʽ<D4><F2>Ҫ<C9><E8><D6><C3><CA><E4><B3><F6><CB>ٶ<C8>
+                                      ^
+stm32f10x_gpio.c(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CA><E4><B3><F6>ģʽ<D4><F2>Ҫ<C9><E8><D6><C3><CA><E4><B3><F6><CB>ٶ<C8>
+                                                                           ^
+stm32f10x_gpio.c(29): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRL <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRL<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>ŵ<CD>8λIO- -------*/
+                        ^
+stm32f10x_gpio.c(29): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRL <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRL<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>ŵ<CD>8λIO- -------*/
+                             ^
+stm32f10x_gpio.c(29): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRL <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRL<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>ŵ<CD>8λIO- -------*/
+                                                             ^
+stm32f10x_gpio.c(29): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRL <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRL<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>ŵ<CD>8λIO- -------*/
+                                                                  ^
+stm32f10x_gpio.c(29): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRL <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRL<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>ŵ<CD>8λIO- -------*/
+                                                                                                   ^
+stm32f10x_gpio.c(30): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5><E4><D6>ö˿ڵ<CD>8λ<A3><AC><BC><B4>Pin0~Pin7
+     ^
+stm32f10x_gpio.c(30): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5><E4><D6>ö˿ڵ<CD>8λ<A3><AC><BC><B4>Pin0~Pin7
+                    ^
+stm32f10x_gpio.c(30): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5><E4><D6>ö˿ڵ<CD>8λ<A3><AC><BC><B4>Pin0~Pin7
+                          ^
+stm32f10x_gpio.c(33): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF>ȱ<B8><B7><DD>CRL<BC>Ĵ<E6><C6><F7><B5><C4>ֵ
+           ^
+stm32f10x_gpio.c(33): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF>ȱ<B8><B7><DD>CRL<BC>Ĵ<E6><C6><F7><B5><C4>ֵ
+                ^
+stm32f10x_gpio.c(33): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF>ȱ<B8><B7><DD>CRL<BC>Ĵ<E6><C6><F7><B5><C4>ֵ
+                               ^
+stm32f10x_gpio.c(33): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF>ȱ<B8><B7><DD>CRL<BC>Ĵ<E6><C6><F7><B5><C4>ֵ
+                                    ^
+stm32f10x_gpio.c(36): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin0<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+            ^
+stm32f10x_gpio.c(36): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin0<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+                                        ^
+stm32f10x_gpio.c(36): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin0<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+                                                 ^
+stm32f10x_gpio.c(36): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin0<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+                                                              ^
+stm32f10x_gpio.c(36): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin0<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+                                                                       ^
+stm32f10x_gpio.c(39): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         // pos<B5><C4>ֵΪ1<D7><F3><D2><C6>pinposλ
+               ^
+stm32f10x_gpio.c(39): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         // pos<B5><C4>ֵΪ1<D7><F3><D2><C6>pinposλ
+                         ^
+stm32f10x_gpio.c(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C1><EE>pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB>㣬Ϊ<CF><C2><C3><E6><B5><C4><C5>ж<CF><D7><F7><U+05FC><B1><B8>
+             ^
+stm32f10x_gpio.c(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C1><EE>pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB>㣬Ϊ<CF><C2><C3><E6><B5><C4><C5>ж<CF><D7><F7><U+05FC><B1><B8>
+                        ^
+stm32f10x_gpio.c(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C1><EE>pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB>㣬Ϊ<CF><C2><C3><E6><B5><C4><C5>ж<CF><D7><F7><U+05FC><B1><B8>
+                                                                        ^
+stm32f10x_gpio.c(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C1><EE>pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB>㣬Ϊ<CF><C2><C3><E6><B5><C4><C5>ж<CF><D7><F7><U+05FC><B1><B8>
+                                                                                 ^
+stm32f10x_gpio.c(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C1><EE>pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB>㣬Ϊ<CF><C2><C3><E6><B5><C4><C5>ж<CF><D7><F7><U+05FC><B1><B8>
+                                                                                                        ^
+stm32f10x_gpio.c(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C1><EE>pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB>㣬Ϊ<CF><C2><C3><E6><B5><C4><C5>ж<CF><D7><F7><U+05FC><B1><B8>
+                                                                                                                                     ^
+stm32f10x_gpio.c(42): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C1><EE>pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB>㣬Ϊ<CF><C2><C3><E6><B5><C4><C5>ж<CF><D7><F7><U+05FC><B1><B8>
+                                                                                                                                                         ^
+stm32f10x_gpio.c(45): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+            ^
+stm32f10x_gpio.c(45): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+                                   ^
+stm32f10x_gpio.c(45): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+                                                ^
+stm32f10x_gpio.c(45): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+                                                     ^
+stm32f10x_gpio.c(45): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+                                                          ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                         ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                 ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                          ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                   ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                            ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                 ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                                      ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                                                   ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                                                                ^
+stm32f10x_gpio.c(48): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                                                                                 ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+         ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+              ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                       ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                            ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                         ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                                      ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                                                    ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                                                                         ^
+stm32f10x_gpio.c(50): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+       //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                                                                                      ^
+stm32f10x_gpio.c(54): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+           ^
+stm32f10x_gpio.c(54): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                        ^
+stm32f10x_gpio.c(54): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                                     ^
+stm32f10x_gpio.c(54): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                                            ^
+stm32f10x_gpio.c(54): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                                                         ^
+stm32f10x_gpio.c(54): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                                                                          ^
+stm32f10x_gpio.c(57): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <C5>ж<CF><CA>Ƿ<F1>Ϊ<CF><C2><C0><AD><CA><E4><C8><EB>ģʽ
+                   ^
+stm32f10x_gpio.c(57): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <C5>ж<CF><CA>Ƿ<F1>Ϊ<CF><C2><C0><AD><CA><E4><C8><EB>ģʽ
+                        ^
+stm32f10x_gpio.c(57): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <C5>ж<CF><CA>Ƿ<F1>Ϊ<CF><C2><C0><AD><CA><E4><C8><EB>ģʽ
+                                 ^
+stm32f10x_gpio.c(57): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <C5>ж<CF><CA>Ƿ<F1>Ϊ<CF><C2><C0><AD><CA><E4><C8><EB>ģʽ
+                                      ^
+stm32f10x_gpio.c(60): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                     ^
+stm32f10x_gpio.c(60): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                       ^
+stm32f10x_gpio.c(60): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                ^
+stm32f10x_gpio.c(60): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                 ^
+stm32f10x_gpio.c(60): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                                    ^
+stm32f10x_gpio.c(60): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                                         ^
+stm32f10x_gpio.c(60): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                                                       ^
+stm32f10x_gpio.c(60): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                                                            ^
+stm32f10x_gpio.c(65): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C5>ж<CF><CA>Ƿ<F1>Ϊ<C9><CF><C0><AD><CA><E4><C8><EB>ģʽ
+             ^
+stm32f10x_gpio.c(65): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C5>ж<CF><CA>Ƿ<F1>Ϊ<C9><CF><C0><AD><CA><E4><C8><EB>ģʽ
+                  ^
+stm32f10x_gpio.c(65): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C5>ж<CF><CA>Ƿ<F1>Ϊ<C9><CF><C0><AD><CA><E4><C8><EB>ģʽ
+                           ^
+stm32f10x_gpio.c(65): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+          // <C5>ж<CF><CA>Ƿ<F1>Ϊ<C9><CF><C0><AD><CA><E4><C8><EB>ģʽ
+                                ^
+stm32f10x_gpio.c(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                    // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                       ^
+stm32f10x_gpio.c(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                    // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                         ^
+stm32f10x_gpio.c(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                    // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                  ^
+stm32f10x_gpio.c(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                    // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                            ^
+stm32f10x_gpio.c(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                    // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                                                ^
+stm32f10x_gpio.c(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                    // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                                                     ^
+stm32f10x_gpio.c(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                    // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                                                                   ^
+stm32f10x_gpio.c(68): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                    // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                                                                        ^
+stm32f10x_gpio.c(74): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRL<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                   ^
+stm32f10x_gpio.c(74): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRL<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                            ^
+stm32f10x_gpio.c(74): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRL<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                  ^
+stm32f10x_gpio.c(74): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRL<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                               ^
+stm32f10x_gpio.c(74): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRL<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                                    ^
+stm32f10x_gpio.c(74): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRL<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                                             ^
+stm32f10x_gpio.c(74): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRL<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                                                  ^
+stm32f10x_gpio.c(74): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRL<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                                                              ^
+stm32f10x_gpio.c(77): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRH <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRH<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>Ÿ<DF>8λIO- -----------*/
+                        ^
+stm32f10x_gpio.c(77): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRH <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRH<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>Ÿ<DF>8λIO- -----------*/
+                             ^
+stm32f10x_gpio.c(77): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRH <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRH<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>Ÿ<DF>8λIO- -----------*/
+                                                             ^
+stm32f10x_gpio.c(77): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRH <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRH<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>Ÿ<DF>8λIO- -----------*/
+                                                                  ^
+stm32f10x_gpio.c(77): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+/*-------------GPIO CRH <BC>Ĵ<E6><C6><F7><C5><E4><D6><C3> CRH<BC>Ĵ<E6><C6><F7><BF><D8><D6><C6><D7>Ÿ<DF>8λIO- -----------*/
+                                                                                                   ^
+stm32f10x_gpio.c(78): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5><E4><D6>ö˿ڸ<DF>8λ<A3><AC><BC><B4>Pin8~Pin15
+     ^
+stm32f10x_gpio.c(78): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5><E4><D6>ö˿ڸ<DF>8λ<A3><AC><BC><B4>Pin8~Pin15
+                    ^
+stm32f10x_gpio.c(78): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  // <C5><E4><D6>ö˿ڸ<DF>8λ<A3><AC><BC><B4>Pin8~Pin15
+                          ^
+stm32f10x_gpio.c(81): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // // <CF>ȱ<B8><B7><DD>CRH<BC>Ĵ<E6><C6><F7><B5><C4>ֵ
+                      ^
+stm32f10x_gpio.c(81): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // // <CF>ȱ<B8><B7><DD>CRH<BC>Ĵ<E6><C6><F7><B5><C4>ֵ
+                           ^
+stm32f10x_gpio.c(81): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // // <CF>ȱ<B8><B7><DD>CRH<BC>Ĵ<E6><C6><F7><B5><C4>ֵ
+                                          ^
+stm32f10x_gpio.c(81): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // // <CF>ȱ<B8><B7><DD>CRH<BC>Ĵ<E6><C6><F7><B5><C4>ֵ
+                                               ^
+stm32f10x_gpio.c(84): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin8<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+            ^
+stm32f10x_gpio.c(84): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin8<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+                                        ^
+stm32f10x_gpio.c(84): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin8<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+                                                 ^
+stm32f10x_gpio.c(84): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin8<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+                                                              ^
+stm32f10x_gpio.c(84): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // ѭ<BB><B7><A3><AC><B4><D3>Pin8<BF><AA>ʼ<C5><E4><B6>ԣ<AC><D5>ҳ<F6><BE><DF><CC><E5><B5><C4>Pin
+                                                                       ^
+stm32f10x_gpio.c(89): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+      // pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB><E3>
+            ^
+stm32f10x_gpio.c(89): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+      // pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB><E3>
+                                                            ^
+stm32f10x_gpio.c(89): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+      // pos<D3><EB><CA><E4><C8><EB><B2><CE><CA><FD>GPIO_PIN<D7><F7>λ<D3><EB><D4><CB><CB><E3>
+                                                                     ^
+stm32f10x_gpio.c(92): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+           ^
+stm32f10x_gpio.c(92): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+                                  ^
+stm32f10x_gpio.c(92): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+                                               ^
+stm32f10x_gpio.c(92): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+                                                    ^
+stm32f10x_gpio.c(92): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         //<C8><F4>currentpin=pos,<D4><F2><D5>ҵ<BD>ʹ<D3>õ<C4><D2><FD><BD><C5>
+                                                         ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                        ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                         ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                  ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                           ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                                     ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                                                  ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                                                               ^
+stm32f10x_gpio.c(95): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                //pinpos<B5><C4>ֵ<D7><F3><D2><C6><C1><BD>λ<A3><A8><B3><CB><D2><D4>4<A3><A9><A3><AC><D2><F2>Ϊ<BC>Ĵ<E6><C6><F7><D6><D0>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C5><E4><D6><C3>һ<B8><F6><D2><FD><BD><C5>
+                                                                                                                                                                                ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+              ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                   ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                            ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                 ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                              ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                                           ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                                                         ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                                                                              ^
+stm32f10x_gpio.c(98): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+            //<B0>ѿ<D8><D6><C6><D5><E2><B8><F6><D2><FD><BD>ŵ<C4>4<B8><F6><BC>Ĵ<E6><C6><F7>λ<C7><E5><C1>㣬<C6><E4><CB><FC><BC>Ĵ<E6><C6><F7>λ<B2><BB><B1><E4>
+                                                                                                                                           ^
+stm32f10x_gpio.c(102): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+           ^
+stm32f10x_gpio.c(102): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                        ^
+stm32f10x_gpio.c(102): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                                     ^
+stm32f10x_gpio.c(102): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                                            ^
+stm32f10x_gpio.c(102): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                                                         ^
+stm32f10x_gpio.c(102): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <CF><F2><BC>Ĵ<E6><C6><F7>д<C8>뽫Ҫ<C5><E4><D6>õ<C4><D2><FD><BD>ŵ<C4>ģʽ
+                                                                          ^
+stm32f10x_gpio.c(105): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <C5>ж<CF><CA>Ƿ<F1>Ϊ<CF><C2><C0><AD><CA><E4><C8><EB>ģʽ
+                   ^
+stm32f10x_gpio.c(105): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <C5>ж<CF><CA>Ƿ<F1>Ϊ<CF><C2><C0><AD><CA><E4><C8><EB>ģʽ
+                        ^
+stm32f10x_gpio.c(105): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <C5>ж<CF><CA>Ƿ<F1>Ϊ<CF><C2><C0><AD><CA><E4><C8><EB>ģʽ
+                                 ^
+stm32f10x_gpio.c(105): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                // <C5>ж<CF><CA>Ƿ<F1>Ϊ<CF><C2><C0><AD><CA><E4><C8><EB>ģʽ
+                                      ^
+stm32f10x_gpio.c(108): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                     ^
+stm32f10x_gpio.c(108): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                       ^
+stm32f10x_gpio.c(108): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                ^
+stm32f10x_gpio.c(108): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                 ^
+stm32f10x_gpio.c(108): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                                    ^
+stm32f10x_gpio.c(108): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                                         ^
+stm32f10x_gpio.c(108): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                                                       ^
+stm32f10x_gpio.c(108): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <CF><C2><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF><D6><C3>0<A3><AC><B6><D4>BRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>0
+                                                                                                                                            ^
+stm32f10x_gpio.c(111): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         // <C5>ж<CF><CA>Ƿ<F1>Ϊ<C9><CF><C0><AD><CA><E4><C8><EB>ģʽ
+            ^
+stm32f10x_gpio.c(111): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         // <C5>ж<CF><CA>Ƿ<F1>Ϊ<C9><CF><C0><AD><CA><E4><C8><EB>ģʽ
+                 ^
+stm32f10x_gpio.c(111): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         // <C5>ж<CF><CA>Ƿ<F1>Ϊ<C9><CF><C0><AD><CA><E4><C8><EB>ģʽ
+                          ^
+stm32f10x_gpio.c(111): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+         // <C5>ж<CF><CA>Ƿ<F1>Ϊ<C9><CF><C0><AD><CA><E4><C8><EB>ģʽ
+                               ^
+stm32f10x_gpio.c(114): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                     ^
+stm32f10x_gpio.c(114): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                       ^
+stm32f10x_gpio.c(114): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                ^
+stm32f10x_gpio.c(114): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                          ^
+stm32f10x_gpio.c(114): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                                              ^
+stm32f10x_gpio.c(114): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                                                   ^
+stm32f10x_gpio.c(114): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                                                                 ^
+stm32f10x_gpio.c(114): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+                  // <C9><CF><C0><AD><CA><E4><C8><EB>ģʽ<A3><AC><D2><FD><BD><C5>Ĭ<C8><CF>ֵΪ1<A3><AC><B6><D4>BSRR<BC>Ĵ<E6><C6><F7>д1<BF>ɶ<D4><D2><FD><BD><C5><D6><C3>1
+                                                                                                                                      ^
+stm32f10x_gpio.c(119): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRH<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+           ^
+stm32f10x_gpio.c(119): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRH<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                    ^
+stm32f10x_gpio.c(119): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRH<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                          ^
+stm32f10x_gpio.c(119): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRH<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                       ^
+stm32f10x_gpio.c(119): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRH<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                            ^
+stm32f10x_gpio.c(119): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRH<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                                     ^
+stm32f10x_gpio.c(119): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRH<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                                          ^
+stm32f10x_gpio.c(119): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+        // <B0><D1>ǰ<C3>洦<C0><ED><BA><F3><B5><C4><D4>ݴ<E6>ֵд<C8>뵽CRH<BC>Ĵ<E6><C6><F7>֮<D6><D0>
+                                                                                      ^
+227 warnings generated.
+compiling stm32f10x_gpio.c...
+linking...
+Program Size: Code=696 RO-data=320 RW-data=0 ZI-data=1024  
+FromELF: creating hex file...
+".\Objects\LED_RGB.axf" - 0 Error(s), 263 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/study STM32/keiil 5/install/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
