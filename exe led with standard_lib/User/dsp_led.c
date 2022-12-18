@@ -3,7 +3,7 @@
 
 void GPIO_Config( void )
 {
-	RCC_APB2PeriphClockCmd( LED_GPIO_Clock , ENABLE );
+	RCC_APB2PeriphClockCmd( LED_GPIO_Clock , ENABLE );      //开哪个时钟 开那个引脚 模式 速率（输出模式下需要配置） 初始化
 	
 	GPIO_InitTypeDef GPIO_Initstruct;
 	
