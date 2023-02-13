@@ -404,6 +404,11 @@
               <FileType>1</FileType>
               <FilePath>..\Lib\CMSIS\system_stm32f10x.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Lib\CMSIS\stm32f10x.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -548,6 +553,11 @@
               <FileName>leld.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\leld.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\stm32f10x_conf.h</FilePath>
             </File>
           </Files>
         </Group>

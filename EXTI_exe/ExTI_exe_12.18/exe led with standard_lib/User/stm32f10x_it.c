@@ -23,6 +23,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
+#include "led.h"
+#include "exti.h"
 
 /** @addtogroup STM32F10x_StdPeriph_Template
   * @{
@@ -134,6 +136,38 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+}
+
+
+/*********中断服务函数*********/
+void KEY1_IRQHandler(void)
+{
+  //确保是否产生了EXTI Line中断
+	if(EXTI_GetITStatus(KEY1_EXTI_Line) != RESET) 
+	{
+		// LED1 取反		
+		
+		LED1_ON;
+		LED2_OFF;
+		LED3_OFF;
+    //清除中断标志位
+		EXTI_ClearITPendingBit(KEY1_EXTI_Line);     
+	}  
+}
+
+void KEY2_IRQHandler(void)
+{
+  //确保是否产生了EXTI Line中断
+	if(EXTI_GetITStatus(KEY2_EXTI_Line) != RESET) 
+	{
+		// LED2 取反		
+		LED1_OFF;
+		LED2_ON;
+		LED3_OFF;
+
+    //清除中断标志位
+		EXTI_ClearITPendingBit(KEY2_EXTI_Line);     
+	}  
 }
 
 /******************************************************************************/

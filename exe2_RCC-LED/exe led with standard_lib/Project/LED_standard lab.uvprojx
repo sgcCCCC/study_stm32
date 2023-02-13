@@ -539,6 +539,36 @@
               <FileType>1</FileType>
               <FilePath>..\User\stm32f10x_it.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\stm32f10x_conf.h</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_it.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\stm32f10x_it.h</FilePath>
+            </File>
+            <File>
+              <FileName>LED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\LED.c</FilePath>
+            </File>
+            <File>
+              <FileName>LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>RCC_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\RCC_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>RCC_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\RCC_config.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
